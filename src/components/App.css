@@ -1,0 +1,16 @@
+*{
+   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  text-align: center;
+}
+.name,
+.gmail,
+.mobile{
+margin: 10px 10px;
+}
+.skills ul li{
+  margin: 10px 10px;
+}

@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import BioData from './components/BioData';
+
+
+let skills = ['HTML', 'CSS', 'JAVASCRIPT', 'REACT'];
+let skills1 = ['HTML', 'CSS', 'JAVASCRIPT', 'REACT', 'python', 'Django'];
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BioData
+        name="Md. Azizul Islam Rajib"
+        gmail="rajib@gmail.com"
+        mobile="+880 1234567"
+        skills={skills}
+      />
+      <hr />
+      <hr />
+      <BioData
+        name="Md. XYZ"
+        gmail="abc@gmail.com"
+        mobile="+880 1234567"
+        skills={skills1}
+      />
     </div>
   );
 }
-
 export default App;
